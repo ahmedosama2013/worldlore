@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Explore countries, discover their origins, and learn the pivotal events that shaped world history.">
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>WorldLore</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="header-top">
+        <div>
+          <p class="eyebrow">WORLD HISTORY EXPLORER</p>
+          <h1>WorldLore</h1>
+          <p class="subtitle">Explore countries, origins, turning points, and independence stories.</p>
+        </div>
+        <button id="themeToggle" class="icon-button" type="button" aria-label="Switch to light mode" title="Switch theme">
+          <span id="themeIcon" aria-hidden="true">☼</span>
+        </button>
+      </div>
+
+      <section class="control-bar" aria-label="WorldLore controls">
+        <label class="search-wrap" for="searchInput">
+          <span class="sr-only">Search for a country</span>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search a country..." autocomplete="off" spellcheck="false">
+        </label>
+
+        <div class="continent-picker" id="continentPicker">
+          <button
+            id="continentButton"
+            class="picker-button"
+            type="button"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+          >
+            <span id="continentLabel">All Continents</span>
+            <span class="picker-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="picker-menu" id="continentMenu" role="listbox" tabindex="-1" hidden></div>
+        </div>
+
+        <button id="surpriseButton" class="primary-button" type="button">
+          <span aria-hidden="true">✦</span>
+          Surprise Me
+        </button>
+      </section>
+    </header>
+
+    <main id="mainContent" class="main-content">
+      <section id="initialState" class="state-card" aria-live="polite">
+        <div class="state-icon" aria-hidden="true">◎</div>
+        <h2>Explore world history</h2>
+        <p>Search for a country above or tap 'Surprise Me' to explore world history.</p>
+      </section>
+
+      <section id="noResultsState" class="state-card is-hidden" aria-live="polite">
+        <div class="state-icon" aria-hidden="true">⌕</div>
+        <h2>No results found</h2>
+        <p id="noResultsMessage">Try another country or switch continents.</p>
+      </section>
+
+      <article id="historyCard" class="history-card is-hidden" aria-live="polite">
+        <div class="history-header">
+          <div>
+            <p id="countryContinent" class="history-kicker"></p>
+            <h2 id="countryName"></h2>
+            <p id="countryCapital" class="capital-line"></p>
+          </div>
+          <div class="formation-chip">
+            <span>State formation</span>
+            <strong id="formationYear"></strong>
+          </div>
+        </div>
+
+        <section class="summary-section">
+          <h3>Independence &amp; Formation</h3>
+          <p id="independenceInfo"></p>
+        </section>
+
+        <section class="overview-section">
+          <h3>Historical Overview</h3>
+          <div id="historyParagraphs" class="history-paragraphs"></div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>Made By: <a href="mailto:ahmedosama2013@gmail.com">ahmedosama2013@gmail.com</a></p>
+      <a
+  class="github-pill"
+  href="https://github.com/ahmedosama2013/worldlore"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="View WorldLore on GitHub"
+>
+  View On GitHub
+</a>
+    </footer>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
