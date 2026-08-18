@@ -12,7 +12,7 @@ WorldLore is an offline world history explorer that lets you discover countries,
 * ☀️ Light mode with persistent theme preference
 * 📱 Responsive design for phones, tablets, and desktops
 * 📖 Detailed historical overviews for every country
-* 📦 Fully offline after the files are available locally
+* 📦 Works fully offline after you open it.
 * 📲 Installable as a Progressive Web App
 
 Made By : ahmedosama2013b@gmail.com
