@@ -7,7 +7,7 @@ WorldLore is an offline world history explorer that lets you discover countries,
 * 🌎 Explore countries from around the world
 * 🔎 Search by country name, capital, or historical information
 * 🗺️ Browse countries by continent
-* 🎲 **Surprise Me** mode for discovering a random country
+* 🎲 **Surprise Me** button which picks a random country
 * 🌙 Dark mode by default
 * ☀️ Light mode with persistent theme preference
 * 📱 Responsive design for phones, tablets, and desktops
