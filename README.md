@@ -17,4 +17,4 @@ WorldLore is an offline world history explorer that lets you discover countries,
 
 Made By : ahmedosama2013b@gmail.com
 
-Link : https://ahmedosama2013.github.io/worldlore/
+Link : https://worldlore.netlify.app
